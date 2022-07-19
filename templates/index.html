@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Validación Forms - Bootstrap 5</title>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script> 
+    <!-- Libreria de jquery -->
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <!-- Titulo -->
+    <title> Formulario de Información</title>
+    <!-- Ruta del recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
     <div class="container">
@@ -19,7 +23,7 @@
                         
                         <div class="col-md-6 position-relative">
                             <label for="nombre" class="form-label">Nombres</label>
-                            <input type="text" class="form-control" id="nombre" value="" required>
+                            <input type="text" class="form-control" id="nombre" value="" placeholder="Escriba sus nombres " required>
                             <!-- Mensajes para validación   -->
                             <div class="valid-tooltip">¡Campo válido!</div>
                             <div class="invalid-tooltip">Debe completar los datos.</div>
@@ -50,8 +54,7 @@
                         </div>
 
                         <div class="mb-3">
-                            <div class="g-recaptcha" data-sitekey="6LeySv0gAAAAAPXs25MpR1ZSi6BWVn5AnBSMRegP";> </div>
-                           
+                            <div class="g-recaptcha" data-sitekey="6LeCzP0gAAAAAEuY50eVKt6napTvZj3TTnF7wdnX";> </div>
 
                         </div>
 
