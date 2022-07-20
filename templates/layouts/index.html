@@ -12,6 +12,7 @@
     <title> Formulario de Información</title>
     <!-- Ruta del recaptcha -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="/static/css/estilo.css">
   </head>
   <body>
     <div class="container">
@@ -20,7 +21,7 @@
                 <div class="shadow-lg p-3 mb-5 mt-4 bg-body rounded">                                    
                     <div class="p-3 mb-2 bg-primary bg-gradient fw-bold text-white"> BONILLA CRISTIAN - Formulario - Tarea Uno</div>
                     <form class="row g-3 needs-validation" novalidate>
-                        
+                        <!-- Ingreso de las cajas para el ingreso y validación del texto   -->
                         <div class="col-md-6 position-relative">
                             <label for="nombre" class="form-label">Nombres</label>
                             <input type="text" class="form-control" id="nombre" value="" placeholder="Escriba sus nombres " required>
@@ -38,7 +39,7 @@
                         </div>
 
                         <div class="col-md-12 position-relative">
-                            <label for="apellido" class="form-label"> Subject</label>
+                            <label for="apellido" class="form-label"> Asunto </label>
                             <input type="text" class="form-control" id="comentario" value="" required>
                             <!-- Mensajes para validación   -->
                             <div class="valid-tooltip">¡Campo válido!</div>
@@ -76,32 +77,12 @@
             </div>
         </div>
     </div>
+<!-- Option 1: Bootstrap Bundle with Popper -->
 
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <script>        
-(function () {
-  'use strict'
-
-  // Obtener todos los formularios a los que queremos aplicar estilos de validación de Bootstrap personalizados
-  var forms = document.querySelectorAll('.needs-validation')
-
-  //Recorremos los forms y evitamos el envío sin validacion
-  Array.prototype.slice.call(forms)
-    .forEach(function (form) {
-      form.addEventListener('submit', function (event) {
-        if (!form.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
-        }else {
-            alert('Datos enviados!')
-        }
-        form.classList.add('was-validated')
-      }, false)
-    })
-})()
-    </script>    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="/static/js/index.js"></script>
+        
   </body>
 </html>
